@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Smaash Blocks Version</title>
+  <meta charset="UTF-8">
+  <title>Hello World Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <pre id="json"></pre>
-  <script>
-    fetch('SmaashBlocksVersion.json')
-      .then(res => res.json())
-      .then(data => document.getElementById('json').textContent = JSON.stringify(data, null, 2));
-  </script>
+  <h1>Hello World depuis Cloudflare Pages !</h1>
 </body>
 </html>
