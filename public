@@ -1,5 +1,14 @@
-{
-  "version": "1.2.3",
-  "url_update": "https://playstore.link/monjeu",
-  "notes": "Ajout du nouveau mode Creative"
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smaash Blocks Version</title>
+</head>
+<body>
+  <pre id="json"></pre>
+  <script>
+    fetch('SmaashBlocksVersion.json')
+      .then(res => res.json())
+      .then(data => document.getElementById('json').textContent = JSON.stringify(data, null, 2));
+  </script>
+</body>
+</html>
